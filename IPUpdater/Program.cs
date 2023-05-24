@@ -15,8 +15,6 @@ Console.ReadKey();
 
 async Task RunCheck(Keys keysConfig)
 {
-
-
     while (true)
     {
         var dnsRecord = await ExistingDNS.Load(keysConfig);
@@ -30,6 +28,6 @@ async Task RunCheck(Keys keysConfig)
         {
             Console.WriteLine("Records are the same");
         }
-        Thread.Sleep(300000);
+        Thread.Sleep(10000);
     }
 }
