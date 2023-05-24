@@ -1,0 +1,23 @@
+﻿https://github.com/AkkuratSoftware/GoDaddyAPI.git
+
+# Copy this file to /etc/systemd/system/
+
+[Unit]
+Description=TestUbuntu Deployment DotNet Core App
+
+[Service]
+WorkingDirectory=/etc/ipupdater.d/
+ExecStart=/usr/bin/dotnet /etc/ipupdater.d/IPUPdater.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-ipupdater
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Development
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+
+# Then execute this  command sudo systemctl enable NAME OF FILE
