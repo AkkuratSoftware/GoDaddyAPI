@@ -27,6 +27,7 @@ namespace IPUpdater
         public string Topic { get; set; }
         public string SkippedTopic { get; set; }
         public bool SendNotUpdated { get; set; }
+        public string ServiceStartTopic { get; set; }
 
         public static async Task<Keys> Load()
         {

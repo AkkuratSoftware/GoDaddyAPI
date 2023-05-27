@@ -14,5 +14,6 @@
   "skippedtopic": "DNSSkipped",
   "mquser": "leslie.marshall@akkuratsoftware.com",
   "mqsecret": "Nanotech123",
-  "sendnotupdated":  true,
+  "sendnotupdated": true,
+  "servicestarttopic": "DNSUpdateServerStart",
 }
