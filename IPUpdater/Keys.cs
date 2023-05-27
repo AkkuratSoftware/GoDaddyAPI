@@ -18,11 +18,15 @@ namespace IPUpdater
         public string ShopperId { get; set; }
         public string Key { get; set; }
         public string Secret { get; set; }
-        public string Topic { get; set; }
 
         public string ClusterUrl { get; set; }
-        public string MQPort { get; set; }
+        public int MQPort { get; set; }
         public string MQWebSocketPort { get; set; }
+        public string MQUser { get; set; }
+        public string MQSecret { get; set; }
+        public string Topic { get; set; }
+        public string SkippedTopic { get; set; }
+        public bool SendNotUpdated { get; set; }
 
         public static async Task<Keys> Load()
         {
@@ -42,7 +46,7 @@ namespace IPUpdater
             string workingDirectory = Environment.CurrentDirectory;
             string pathName = Path.Combine(workingDirectory, "Keys.json");
 
-           var json = JsonConvert.SerializeObject(this, Formatting.Indented);
+            var json = JsonConvert.SerializeObject(this, Formatting.Indented);
             File.WriteAllText(pathName, json);
 
         }

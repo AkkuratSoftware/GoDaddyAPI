@@ -10,5 +10,9 @@
   "clusterurl": "bef4ecff90074d2aa87fd0c8c7abcda6.s2.eu.hivemq.cloud",
   "mqport": "8883",
   "mqwebsocketport": "8884",
-  "topic": "DNSUpdated"
+  "topic": "DNSUpdated",
+  "skippedtopic": "DNSSkipped",
+  "mquser": "leslie.marshall@akkuratsoftware.com",
+  "mqsecret": "Nanotech123",
+  "sendnotupdated":  true,
 }
