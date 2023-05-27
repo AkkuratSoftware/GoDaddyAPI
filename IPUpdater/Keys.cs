@@ -18,6 +18,11 @@ namespace IPUpdater
         public string ShopperId { get; set; }
         public string Key { get; set; }
         public string Secret { get; set; }
+        public string Topic { get; set; }
+
+        public string ClusterUrl { get; set; }
+        public string MQPort { get; set; }
+        public string MQWebSocketPort { get; set; }
 
         public static async Task<Keys> Load()
         {

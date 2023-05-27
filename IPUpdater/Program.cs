@@ -1,11 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using IPUpdater;
 using System.Net.NetworkInformation;
-
-Console.WriteLine("Hello, World!");
-
-
-//var ipdata = await MyIP.Load("http://ipinfo.io/json");
+using HiveMQtt.Client;
+using HiveMQtt.Client.Options;
+using HiveMQtt.MQTT5.ReasonCodes;
+using HiveMQtt.MQTT5.Types;
 
 var keys = await Keys.Load();
 
@@ -28,6 +27,6 @@ async Task RunCheck(Keys keysConfig)
         {
             Console.WriteLine("Records are the same");
         }
-        Thread.Sleep(10000);
+        Thread.Sleep(60000);
     }
 }

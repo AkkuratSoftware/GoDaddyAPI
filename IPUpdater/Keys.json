@@ -6,5 +6,9 @@
   "testsecret": "DPE5umVsjzFPTUacVtUkMQ",
   "shopperid": "127644053",
   "key": "dKYfkhYxXbZk_N3VM95erTuVoU3K2pvRQCG",
-  "secret": "DH6c3HEukgk7xvsoTeSrMQ"
+  "secret": "DH6c3HEukgk7xvsoTeSrMQ",
+  "clusterurl": "bef4ecff90074d2aa87fd0c8c7abcda6.s2.eu.hivemq.cloud",
+  "mqport": "8883",
+  "mqwebsocketport": "8884",
+  "topic": "DNSUpdated"
 }
